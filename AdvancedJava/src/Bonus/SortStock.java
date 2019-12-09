@@ -38,7 +38,7 @@ public class SortStock {
         doubleBubbleSort(arr, sideArr, n-1);
     }
     
-    String revertQuality(int quality){
+    static String revertQuality(int quality){
         String revertedQuality;
         switch(quality){
             case(0):

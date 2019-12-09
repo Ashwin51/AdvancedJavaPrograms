@@ -41,15 +41,11 @@ public class MarkMedian {
         }
         bubbleSort(marks, amnt);
         if(!(amnt%2==0)){
-            System.out.print("Odd");
             median = marks[amnt/2];
         }else{
-            System.out.println(marks[(int)(amnt/2+0.5)]);
-            System.out.println(marks[(int)(amnt/2-0.5)]);
-            System.out.println("Even");
             median = marks[(int)(amnt/2+0.5)]+marks[(int)(amnt/2-0.5)];
             median = median/2;
         }
-        System.out.println(median);
+        System.out.println("The median is: " + median);
     }
 }

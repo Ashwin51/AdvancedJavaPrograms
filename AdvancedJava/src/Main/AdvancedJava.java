@@ -19,13 +19,11 @@ public class AdvancedJava {
     /**
      * @param args the command line arguments
      */
-   
     public static void main(String[] args) {
-        //new WordFind(); //Program 3
-        //new MarkMedian(); //Program 2
-        //new SampleStockMaker(); //Program 1
+        new SampleStockMaker(); //Program 1
+        new MarkMedian(); //Program 2
+        new WordFind(); //Program 3
         new Stocker(); //Bonus Program
-        
     }
-    
+
 }

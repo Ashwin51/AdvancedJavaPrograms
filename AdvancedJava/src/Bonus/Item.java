@@ -54,4 +54,28 @@ public class Item {
         } 
         return(qualityString);
     }
+    int valueCheck(Quality quality){
+        int qualityValue;
+        switch (quality){
+            case Excellent:
+                qualityValue = 0;
+                break;
+            case Good:
+                qualityValue = 1;
+                break;
+            case Normal:
+                qualityValue = 2;
+                break;
+            case Bad:
+                qualityValue = 3;
+                break;
+            case Horrible:
+                qualityValue = 4;
+                break;
+            default:
+                qualityValue = -1;
+                break; 
+        } 
+        return(qualityValue);
+    }
 }

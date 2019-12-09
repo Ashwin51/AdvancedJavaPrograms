@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Bonus;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -18,21 +19,25 @@ public class CreateStock {
     private int amnt;
     private Item item;
     private PrintWriter writer;
-    
-    public CreateStock(){
+    public static Item[] items;
+
+    public CreateStock() {
         System.out.print("How many items must be stocked=> ");
         amnt = SCANNER.nextInt();
-        System.out.print("Every item will have a randomized quality.");
-        try{
-        writer = new PrintWriter("src/TxtFiles/CurrentStock.txt", "UTF-8");
-        }catch(Exception e){
+        items = new Item[amnt];
+        System.out.println("Every item will have a randomized quality.");
+        try {
+            writer = new PrintWriter("src/TxtFiles/CurrentStock.txt", "UTF-8");
+            for (int i = 0; i < amnt; i++) {
+                item = new Item(i);
+                items[i] = item;
+                writer.print("Item ID: " + (i + 1));
+                writer.println(" Item Quality: " + item.qualityCheck(item.quality));
+            }
+            writer.close();
+        } catch (Exception e) {
             System.out.print("Failed to create file");
         }
-        for (int i = 0; i < amnt; i++){
-            item = new Item(i);
-            writer.print("Item ID: "+(i+1));
-            writer.println(" Item Quality: "+item.qualityCheck(item.quality));
-        }
-        writer.close();
+
     }
 }

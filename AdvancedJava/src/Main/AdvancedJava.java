@@ -8,6 +8,7 @@ package Main;
 import Bonus.CreateStock;
 import Program1.SampleStockMaker;
 import Program2.MarkMedian;
+import Program3.WordFind;
 
 /**
  *
@@ -20,7 +21,8 @@ public class AdvancedJava {
      */
    
     public static void main(String[] args) {
-        new MarkMedian();
+        new WordFind(); //Program 3
+        //new MarkMedian(); //Program 2
         //new SampleStockMaker(); //Program 1
         //new CreateStock(); //Bonus Program
         

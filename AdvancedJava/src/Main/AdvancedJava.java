@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package advancedjava;
+package Main;
+
+import Bonus.CreateStock;
+import Program1.SampleStockMaker;
+import Program2.MarkMedian;
 
 /**
  *
@@ -16,7 +20,10 @@ public class AdvancedJava {
      */
    
     public static void main(String[] args) {
-        new CreateStock(); //Program 1
+        new MarkMedian();
+        //new SampleStockMaker(); //Program 1
+        //new CreateStock(); //Bonus Program
+        
     }
     
 }

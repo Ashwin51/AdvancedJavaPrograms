@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package advancedjava;
+package Bonus;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -19,7 +19,7 @@ public class CreateStock {
     private Item item;
     private PrintWriter writer;
     
-    CreateStock(){
+    public CreateStock(){
         System.out.print("How many items must be stocked=> ");
         amnt = SCANNER.nextInt();
         System.out.print("Every item will have a randomized quality.");
